@@ -4,8 +4,6 @@ server:
 eureka:
   instance:
     hostname: localhost
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    prefer-ip-address: true
   client:
     fetch-registry: true
     registry-with-eureka: false
