@@ -26,3 +26,8 @@ spring:
           uri: lb://api-catalog
           predicates:
             - Path=/catalog/**
+  application:
+    name: api-gateway
+  zipkin:
+    base-url: http://zipkin:9411
+    enabled: true

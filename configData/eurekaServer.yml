@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: eurekaServer
+  zipkin:
+    base-url: http://zipkin:9411
+    enabled: true
 eureka:
   instance:
     hostname: localhost
