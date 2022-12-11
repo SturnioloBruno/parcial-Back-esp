@@ -5,7 +5,7 @@ spring:
   application:
     name: api-catalog
   zipkin:
-    base: http://zipkin:9411
+    base: http://openzipkin/zipkin:9411
     enabled: true
 
 eureka:
