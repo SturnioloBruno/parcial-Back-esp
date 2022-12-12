@@ -17,7 +17,7 @@ public class SeriesService {
         this.serieRepositoryMongo = serieRepositoryMongo;
     }
 
-    public Series findById(Long id) {
+    public Series findById(String id) {
         return serieRepositoryMongo.findById(id)
                 .orElse(null);
     }
