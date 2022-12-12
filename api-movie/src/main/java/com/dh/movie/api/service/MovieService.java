@@ -3,12 +3,14 @@ package com.dh.movie.api.service;
 
 import com.dh.movie.domain.model.Movie;
 import com.dh.movie.domain.repository.MovieRepository;
+import com.dh.movie.shared.GenericServiceImpl;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class MovieService {
+public class MovieService extends GenericServiceImpl<Movie, Long> implements ImovieService{
 
 
     private final MovieRepository movieRepository;
@@ -23,5 +25,10 @@ public class MovieService {
 
     public Movie save(Movie movie) {
         return movieRepository.save(movie);
+    }
+
+    @Override
+    public JpaRepository<Movie, Long> getRepository() {
+        return movieRepository;
     }
 }

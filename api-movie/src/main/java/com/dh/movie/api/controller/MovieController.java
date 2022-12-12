@@ -37,4 +37,7 @@ public class MovieController {
     public void saveMovie(@RequestBody Movie movie) {
         movieListener.receive(movie);
     }
+
+    @GetMapping("/findAll")
+    public List<Movie> findAll() { return movieService.getAll(); }
 }
