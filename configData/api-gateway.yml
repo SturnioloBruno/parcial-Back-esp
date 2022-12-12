@@ -26,6 +26,10 @@ spring:
           uri: lb://api-catalog
           predicates:
             - Path=/catalog/**
+        - id: seriesRoute
+          uri: lb://series-service
+          predicates:
+            - Path=/series/**
   application:
     name: api-gateway
   zipkin:
