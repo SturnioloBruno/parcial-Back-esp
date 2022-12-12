@@ -14,7 +14,6 @@ public class SeriesController {
 
      private final SeriesService service;
 
-    @Autowired
      public SeriesController(SeriesService service) {
         this.service = service;
     }
