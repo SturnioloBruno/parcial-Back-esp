@@ -18,7 +18,7 @@ public interface MovieServiceClient {
 	@GetMapping("movies/{genre}")
 	List<MovieDto> getMovieByGenre(@PathVariable (value = "genre") String genre);
 
-	@PostMapping("/salvar")
+	@PostMapping("movies/salvar")
 	ResponseEntity<Movie> saveMovie(@RequestBody Movie movie);
 
 
