@@ -1,4 +1,4 @@
-package com.dh.movie.service;
+package com.dh.movie.api.service;
 
 
 import com.dh.movie.domain.model.Movie;
