@@ -10,7 +10,7 @@ spring:
       password: rootpass
       database: tp_final
       port: 27017
-      host: http://localhost:27017
+      host: localhost
 
   zipkin:
     base-url: http://localhost:9411
