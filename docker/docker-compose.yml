@@ -20,4 +20,15 @@ services:
       # Opens port 3306 on the container
       - '3306'
       # Where our data will be persisted
-   
+  mongodb:
+    image: mongo
+    container_name: "mongodb"
+    command: mongod --auth
+    environment:
+      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME=rootuser
+      - MONGO_INITDB_ROOT_PASSWORD=rootpass
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017:27017"
