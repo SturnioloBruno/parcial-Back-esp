@@ -23,7 +23,7 @@ public class SeriesController {
         return ResponseEntity.ok().body(service.saveSeries(s));
     }
 
-    @GetMapping("/genre")
+    @GetMapping("/{genre}")
     public ResponseEntity<List<Series>> getGenre(@PathVariable String genre) {
         return ResponseEntity.ok(service.findByGenre(genre));
     }
