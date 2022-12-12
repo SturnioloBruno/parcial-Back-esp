@@ -31,6 +31,6 @@ services:
     ports:
       - "27017:27017"
     expose:
-      - "27017:27017"
+      - 27017
     volumes:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
