@@ -1,4 +1,4 @@
-package com.dh.catalog.client;
+package com.dh.catalog.api.client;
 
 import lombok.Getter;
 import lombok.Setter;

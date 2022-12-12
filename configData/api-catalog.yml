@@ -7,6 +7,17 @@ spring:
   zipkin:
     base: http://localhost:9411
     enabled: true
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+
+queue:
+  movie:
+    name: MovieQueue
+
+message: hello Catalog up
 
 eureka:
   client:
