@@ -1,8 +1,8 @@
 package com.dh.movie.service;
 
 
-import com.dh.movie.model.Movie;
-import com.dh.movie.repository.MovieRepository;
+import com.dh.movie.domain.model.Movie;
+import com.dh.movie.domain.repository.MovieRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

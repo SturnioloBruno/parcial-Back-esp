@@ -1,6 +1,6 @@
 package com.dh.movie.controller;
 
-import com.dh.movie.model.Movie;
+import com.dh.movie.domain.model.Movie;
 import com.dh.movie.service.MovieService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

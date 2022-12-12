@@ -1,4 +1,4 @@
-package com.dh.movie.model;
+package com.dh.movie.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
