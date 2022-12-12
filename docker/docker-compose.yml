@@ -20,6 +20,12 @@ services:
       # Opens port 3306 on the container
       - '3306'
       # Where our data will be persisted
+  rabbitmq3:
+    image: rabbitmq:3-management
+    container_name: rabbitmq3
+    ports:
+      - "5672:5672"
+      - "15672:15672"
   # mongodb:
   #   image: mongo
   #   container_name: "mongodb"
