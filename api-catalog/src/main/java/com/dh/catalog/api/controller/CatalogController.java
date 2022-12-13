@@ -26,6 +26,11 @@ public class CatalogController {
 		return ResponseEntity.ok(movieServiceClient.getMovieByGenre(genre));
 	}
 
+	@GetMapping("/withErrors/{genre}")
+	ResponseEntity<List<MovieServiceClient.MovieDto>> getGenre(@PathVariable String genre, @RequestParam("throwError") Boolean throwError) {
+		return movieServiceClient.getMovieByGenreWithThrowError(genre, throwError);
+	}
+
 	@PostMapping("/salvar")
 	public void saveMovie(@RequestBody Movie movie) { movieSender.send(movie);}
 
