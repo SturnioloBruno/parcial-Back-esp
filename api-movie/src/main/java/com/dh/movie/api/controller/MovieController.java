@@ -26,6 +26,11 @@ public class MovieController {
     ResponseEntity<List<Movie>> getMovieByGenre(@PathVariable String genre) {
         return ResponseEntity.ok().body(movieService.findByGenre(genre));
     }
+    //endpoint para probar resilencia
+    @GetMapping("/withErrors/{genre}")
+    ResponseEntity<List<Movie>> getMovieByGenre(@PathVariable String genre, @RequestParam("throwError") boolean throwError) {
+        return ResponseEntity.ok().body(movieService.findByGenre(genre, throwError));
+    }
 
     /*
     @PostMapping("/save")

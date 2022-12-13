@@ -23,6 +23,12 @@ public class MovieService extends GenericServiceImpl<Movie, Long> implements Imo
         return movieRepository.findByGenre(genre);
     }
 
+    public List<Movie> findByGenre(String genre, Boolean throwError) {
+        if (throwError)
+            throw new RuntimeException();
+        return movieRepository.findByGenre(genre);
+    }
+
     public Movie save(Movie movie) {
         return movieRepository.save(movie);
     }
