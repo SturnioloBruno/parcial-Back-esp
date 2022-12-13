@@ -12,6 +12,13 @@ spring:
     password: guest
     host: localhost
     port: 5672
+  data:
+    mongodb:
+      username: usrcatalog
+      password: pwdcatalog
+      database: catalog
+      port: 27018
+      host: localhost
 
 queue:
   movie:
