@@ -5,9 +5,6 @@ spring:
     name: api-serie
   data:
     mongodb:
-      authentication-database: admin
-      username: rootuser
-      password: rootpass
       database: tp_final
       port: 27017
       host: localhost
